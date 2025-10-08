@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRAGATI AI</title>
+  <link rel="stylesheet" href="style.css" />  
+  <script src="https://cdn.ux4g.gov.in/UX4G@2.0.8/js/ux4g-map.js"></script>
+  <script src="https://cdn.ux4g.gov.in/UX4G@2.0.8/js/ux4g-map-all.js"></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-gradient">🚀PRAGATI</span> <span class="brand-accent">AI</span>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#translate" class="nav-link">Translate</a>
+        <a href="#dashboard" class="nav-link">Dashboard</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="home" class="section alt">
+    <section class="hero">
+    <div class="overlay"></div>
+    <div class="container text-center">
+      <h1>
+        AI-Powered Multilingual Content
+        <span class="gradient-text">Localization Engine</span>
+      </h1>
+      <p class="accessibility-text">
+        Democratizing access to skill education across India through intelligent translation and cultural adaptation of vocational training content.
+      </p>
+      <div class="buttons">
+        <a href="/translate" class="btn btn-outline">Start Translating</a>
+        <a href="/about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+           <!-- Stats Section -->
+  <section class="stats">
+    <div class="container grid-4">
+  <div class="stat">
+    <div class="number primary">🌐 22+</div>
+    <div>Languages Supported</div>
+  </div>
+  <div class="stat">
+    <div class="number secondary">✅ 95%</div>
+    <div>Translation Accuracy</div>
+  </div>
+  <div class="stat">
+    <div class="number accent">📄 10K+</div>
+    <div>Documents Translated</div>
+  </div>
+  <div class="stat">
+    <div class="number primary">⏰ 24/7</div>
+    <div>API Availability</div>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Comprehensive Translation Features</h2>
+      <p class="section-subtitle">Built for the unique needs of India's vocational education ecosystem</p>
+      <div id="features-grid" class="features-grid"></div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container text-center">
+      <h2>Ready to Make Education Accessible?</h2>
+      <p>Join NCVET and MSDE in democratizing skill education across India</p>
+      <a href="/contact" class="btn btn-secondary">Get Started Today</a>
+    </div>
+  </section> 
+</div>
+  </section>
+
+
+  <!-- Translate Section -->
+    <section id="translate" class="section alt">
+      <div class="overlay"></div>
+      <div class="container">
+        <section class="duss">
+  <h2><span class="icon">🗣</span> AI Translation Engine</h2>
+  <p>Translate vocational training content into any Indian regional language with cultural adaptation.</p>
+</section>
+
+<!-- Domain Section -->
+<section class="domain">
+  <div class="translation-grid">
+    <!-- Source -->
+    <div class="zar">
+      <h3>Source Content</h3>
+      <p class="desc">Enter or upload content to translate</p>
+
+      <select id="sourceLang" class="select-box"></select>
+
+      <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+
+      <div class="btn-group">
+        <button class="btn-outline">📤 Upload File</button>
+        <button class="btn-outline">🎤 Voice Input</button>
+      </div>
+    </div>
+
+    <!-- Target -->
+    <div class="zar">
+      <h3>Translated Content</h3>
+      <p class="desc">AI-powered translation with cultural adaptation</p>
+
+      <select id="targetLang" class="select-box"></select>
+
+      <textarea id="translatedText" placeholder="Translation will appear here..." readonly></textarea>
+
+      <div class="btn-group">
+        <button class="btn-outline">📄 Download</button>
+        <button class="btn-outline">🔊 Text-to-Speech</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Translate Button -->
+  <div class="center">
+    <button id="translateBtn" class="btn-main">Translate Now</button>
+    <p id="toastMsg" class="toast"></p>
+  </div>
+</section>
+
+<!-- Domain Features Section -->
+<section class="domain-features">
+  <h3>Domain-Specific Features</h3>
+
+  <div class="feature-grid">
+    <div>
+      <h4>Vocabulary Banks</h4>
+      <ul>
+        <li> Industry terminology</li>
+        <li> Skill-specific terms</li>
+        <li> Technical jargon</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Cultural Adaptation</h4>
+      <ul>
+        <li> Regional context</li>
+        <li> Local examples</li>
+        <li> Cultural sensitivity</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Quality Assurance</h4>
+      <ul>
+        <li> AI feedback loops</li>
+        <li> Accuracy validation</li>
+        <li> Continuous improvement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+      <div class="container">
+        <h2> Dashboard</h2>
+    <p>Monitor translation activities and performance metrics</p>
+  </header>
+  
+  <!-- Stats Section -->
+    <main class="dash-main">
+    <section class="dash-stats">
+      <div class="stat-card">
+      <h3>🗣️ Total Translations</h3>
+      <p class="stat-num">1,247</p>
+      </div>
+
+      <div class="stat-card">
+      <h3>👥 Active Users</h3>
+      <p class="stat-num">342</p>
+      </div>
+
+      <div class="stat-card">
+      <h3>📈 Success Rate</h3>
+      <p class="stat-num">98.5%</p>
+      </div>
+
+      <div class="stat-card">
+      <h3>⏱️ Avg. Time</h3>
+      <p class="stat-num">2.3 min</p>
+      </div>
+    </section>
+
+    <!-- Recent Translations -->
+    <section class="dash-recent">
+      <h2>Recent Translations</h2>
+      <p>Your latest translation activities across all languages</p>
+      <table class="recent-table" id="recentTable">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Source</th>
+            <th>Target</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Lang Distribution -->
+    <section class="dash-langs">
+      <div class="lang-chart">
+        <h2>Language Distribution</h2>
+        <p>Most translated languages this month</p>
+        <div id="langList"></div>
+      </div>
+
+      <div class="content-types">
+        <h2>Content Types</h2>
+        <p>Distribution of content formats</p>
+        <div id="contentList"></div>
+      </div>
+    </section>
+    </main>
+    </form>
+
+
+        <div class="form-row">
+          <button id="refreshBtn" class="btn"></button>
+        </div>
+
+    <section class="section">
+      <div class="xyz">       
+        <form id="itemForm" class="form">
+          <div class="form-row">            
+          </div>         
+    </section>
+    
+
+  <!-- About Section -->
+    <section id="about" class="Section alt">
+      <div class="container">
+        <h2>About PRAGATI AI</h2>
+      <p>Empowering India's Skill Revolution Through Technology</p>
+    </div>
+  </section>
+
+  <!-- Background Section -->
+  <section class="section">
+    <div class="xoxo">
+      <h3>Background</h3>
+      <p>
+        India's vocational education and training ecosystem caters to learners across diverse linguistic and cultural backgrounds. A significant barrier to skilling participation is that much of the digital and printed training content is available only in English or a few regional languages.
+      </p>
+      <p>
+        This limits accessibility and effectiveness for learners from rural and non-English-speaking regions. Manual translation and adaptation of skill training content is time-consuming, expensive, and inconsistent in quality.
+      </p>
+      <p>
+        PRAGATI AI addresses this challenge by providing an AI-powered localization engine that can not only translate training content into multiple Indian languages but also adapt it to cultural contexts, industry terminology, and learner needs.
+      </p>
+    </div>
+  </section>
+
+  <!-- dev Section -->
+  <section id="dev-section">
+  <h2>Our Core Values</h2>
+  <div id="dev" class="dev-container"></div>
+</section>
+
+  <!-- Solution Section -->
+  <section class="section">
+    <div class="xoxo">
+      <h3>Our Solution</h3>
+      <div class="dev-2">
+        <div>
+          <h4>Core Features</h4>
+          <ul>
+            <li>✓ AI-driven translation for 22+ Indian languages</li>
+            <li>✓ Domain-specific vocabulary banks</li>
+            <li>✓ Multi-format content support</li>
+            <li>✓ Speech-to-text and text-to-speech</li>
+            <li>✓ Cultural adaptation algorithms</li>
+            <li>✓ Continuous learning through ML</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Benefits</h4>
+          <ul>
+            <li>✓ Increased accessibility for rural learners</li>
+            <li>✓ Consistent translation quality</li>
+            <li>✓ Cost-effective at scale</li>
+            <li>✓ Faster content deployment</li>
+            <li>✓ Better learning outcomes</li>
+            <li>✓ Inclusive education ecosystem</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership Section -->
+  <section class="section">
+    <div class="xoxo gradient">
+      <h3>Partnership with NCVET & MSDE</h3>
+      <p>
+        PRAGATI AI is developed in collaboration with the National Council for Vocational Education and Training (NCVET) and the Ministry of Skill Development and Entrepreneurship (MSDE). Together, we envision this solution as a crucial step towards democratizing access to skill education, ensuring inclusivity, and making India's skilling ecosystem truly multilingual.
+      </p>
+    </div>
+    </section>
+
+    <section id="contact" class="section alt">
+       <section class="intro">
+      <h2>Get in Touch</h2>
+      <p>Have questions about PRAGATI AI? We're here to help make skill education accessible for all.</p>
+    </section>
+    <!-- Contact Info Cards -->
+    <section class="contact-grid">
+      <div class="xoxo">
+        <h3>Email Us</h3>
+        <p class="desc">Send us your queries</p>
+        <p>info@pragati.ai</p>
+        <p>support@pragati.ai</p>
+      </div>
+
+      <div class="xoxo">
+        <h3>Call Us</h3>
+        <p class="desc">Mon-Fri, 9am-6pm IST</p>
+        <p>+91 1800-XXX-XXXX</p>
+        <p>+91 1800-YYY-YYYY</p>
+      </div>
+
+      <div class="xoxo">
+        <h3>Visit Us</h3>
+        <p class="desc">Our office location</p>
+        <p>NCVET Office<br>New Delhi - 110001<br>India</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form-section">
+      <h2>Send us a Message</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" placeholder="Your organization or institution" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell us about your requirements or questions..." required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Send Message</button>
+      </form>
+      <p id="responseMsg" class="response-msg"></p>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="api-section">
+      <h2>Integration & API Access</h2>
+      <p>
+        Looking to integrate PRAGATI AI with your Learning Management System or platform?
+        Contact our technical team for API documentation and integration support.
+      </p>
+      <button id="apiBtn">Request API Documentation</button>
+    </section>
+    </section>
+
+
+    
+  <!-- Footer Section -->
+    <footer class="foot-wrap">
+    <div class="foot-container">
+      <div class="foot-grid">
+        
+        <!-- Logo + Description -->
+        <div class="foot-box">
+          <div class="foot-logo">
+           <span class="foot-icon">🚀</span>
+           <span class="foot-name">PRAGATI AI</span>
+          </div>
+          <p class="foot-desc">
+            Democratizing access to skill education through AI-powered multilingual content localization.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="foot-box">
+          <h3 class="foot-head">Quick Links</h3>
+          <ul class="foot-list">
+            <li><a href="index.html" class="foot-link">Home</a></li>
+            <li><a href="translate.html" class="foot-link">Translate</a></li>
+            <li><a href="dashboard.html" class="foot-link">Dashboard</a></li>
+            <li><a href="about.html" class="foot-link">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="foot-box">
+          <h3 class="foot-head">Resources</h3>
+          <ul class="foot-list">
+            <li>Documentation</li>
+            <li>API Reference</li>
+            <li>Integration Guide</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="foot-box">
+          <h3 class="foot-head">Contact</h3>
+          <ul class="foot-list">
+            <li>📧 info@pragati.ai</li>
+            <li>📞 +91 1800-XXX-XXXX</li>
+            <li>📍 New Delhi, India</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2025 PRAGATI AI. All rights reserved. Built for NCVET & MSDE.</p>
+      </div>
+    </div>
+  </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
